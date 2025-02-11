@@ -83,8 +83,8 @@ private val DarkColors = darkColorScheme(
 
 @Composable
 fun AppTheme(
-    useDarkTheme: Boolean =  isSystemInDarkTheme(),
-    content: @Composable () -> Unit
+    useDarkTheme: Boolean = isSystemInDarkTheme(),
+    content: @Composable() () -> Unit
 ) {
 
     val context = LocalContext.current
@@ -110,6 +110,7 @@ fun AppTheme(
 
     MaterialTheme(
         colorScheme = colors,
+        typography = typography,
         content = content
     )
 }
